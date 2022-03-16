@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora JavaScript</title>
+</head>
+
+<body>
+
+</body>
+<script type="text/javascript">
+    var numero1 = prompt("Insira o primeiro número: ");
+    var numero2 = prompt("Insira o segundo número: ");
+    var operacao = prompt("Qual operação deseja realizar? (Digite + ou - ou * ou /)");
+
+    var resultadoOperacao = realizaOperacao(numero1, numero2, operacao);
+
+    alert('O resultado da operação é igual a: ' + resultadoOperacao);
+
+    function realizaOperacao(numero1, numero2, op) {
+        var resultado = 0;
+
+        //resultado = numero1 + eval(op) + numero2;
+        resultado = eval(numero1 + op + numero2);
+
+        return resultado;
+
+
+    }
+</script>
+
+</html>
